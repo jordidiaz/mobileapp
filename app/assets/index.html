@@ -2,15 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-  <title>BTC Chaplin + Cordova</title>
+  <title>Chaplin + Cordova + Ratchet</title>
+  <!-- Sets initial viewport load and disables zooming  -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- css and js -->
   <link rel="stylesheet" href="styles/app.css">
   <script src="scripts/vendor.js"></script>
   <script src="cordova.js"></script>
   <script src="scripts/app.js"></script>
   <script>require('initialize');</script>
 </head>
-<body></body>
+<body>
+  <div id="app-container"/>
+</body>
 </html>
