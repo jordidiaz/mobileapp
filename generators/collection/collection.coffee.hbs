@@ -1,0 +1,7 @@
+'use strict'
+
+Collection = require('models/base/collection')
+{{uppercamelize name}} = require('./{{dasherize name}}')
+
+module.exports = class {{uppercamelize pluralName}} extends Collection
+  model: {{uppercamelize name}}

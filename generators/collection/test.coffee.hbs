@@ -1,0 +1,17 @@
+'use strict'
+
+{{uppercamelize name}} = require('models/{{dasherize name}}')
+{{uppercamelize pluralName}} = require('models/{{dasherize pluralName}}')
+
+describe '{{uppercamelize pluralName}}', ->
+
+  beforeEach ->
+    @{{camelize name}} = new {{uppercamelize name}}
+    @{{camelize pluralName}} = new {{uppercamelize pluralName}}
+
+  it '', ->
+
+
+  afterEach ->
+    @{{camelize name}}.dispose()
+    @{{camelize pluralName}}.dispose()
