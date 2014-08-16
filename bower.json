@@ -11,7 +11,8 @@
     "normalize-css": "~3.0.0",
     "jquery": "~2.1.0",
     "lodash": "~2.4.1",
-    "fastclick": "~1.0.3"
+    "fastclick": "~1.0.3",
+    "rivets": "~0.6.9"
   },
   "overrides": {
     "backbone": {
@@ -20,6 +21,9 @@
         "jquery": "*"
       },
       "main": "backbone.js"
+    },
+    "rivets": {
+      "main": "dist/rivets.js"
     }
   }
 }

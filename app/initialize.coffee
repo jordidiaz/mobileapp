@@ -5,8 +5,8 @@ initialize = ->
   # Add FastClick
   FastClick.attach(document.body)
 
-  # Set up Rivets if available
-  if window.rivets then rivets.adapters[':'] =
+  # Set up Rivets
+  rivets.adapters[':'] =
     subscribe: (obj, keypath, callback) ->
       obj.on("change:#{keypath}", callback)
     unsubscribe: (obj, keypath, callback) ->
