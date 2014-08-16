@@ -2,8 +2,8 @@
 
 initialize = ->
 
-  # Add FastClick if available
-  if window.FastClick then FastClick.attach(document.body)
+  # Add FastClick
+  FastClick.attach(document.body)
 
   # Add Davy promises if available and we are using Exoskeleton
   if !Backbone.Deferred and window.Davy
