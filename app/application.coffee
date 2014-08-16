@@ -1,9 +1,9 @@
 'use strict'
 
-routes = require('routes')
-utils = require('utils')
+routes = require 'routes'
+utils  = require 'utils'
 
-defaultOptions = {routes, controllerSuffix: ''}
+defaultOptions = {routes, controllerSuffix: '-controller', pushState: off}
 
 module.exports = class Application extends Chaplin.Application
 

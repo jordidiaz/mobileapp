@@ -1,5 +1,7 @@
 'use strict'
 
+Application = require 'application'
+
 initialize = ->
 
   # Add FastClick
@@ -17,16 +19,11 @@ initialize = ->
       obj.set(keypath, value)
 
   # Start application
-  App = require('app')
-  new App(pushState: off)
+  new Application
 
 # Initialize the application on DOM ready event.
-# Use jQuery if available. Otherwise use native.
 preInitialize = ->
-  if window.$
-    $(document).ready(initialize)
-  else
-    document.addEventListener('DOMContentLoaded', initialize);
+  $(document).ready(initialize)
 
 # Before initializing, check that Cordova is loaded properly
 if cordova?
