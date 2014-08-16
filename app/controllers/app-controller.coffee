@@ -1,7 +1,7 @@
 'use strict'
 
-Controller = require('controllers/base/controller')
-IndexView = require('views/index')
+Controller = require 'controllers/base/controller'
+IndexView  = require 'views/index'
 
 module.exports = class AppController extends Controller
 
