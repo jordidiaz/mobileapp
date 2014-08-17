@@ -11,7 +11,10 @@ module.exports = function(karmaConfig) {
       'node_modules/mocha-as-promised/mocha-as-promised.js',
       path.join(config.paths.public, 'scripts/vendor.js'),
       path.join(config.paths.public, 'scripts/app.js'),
-      'test/code/**/*'
-    ]
+      'test/code/**/*.coffee'
+    ],
+    preprocessors: {
+      'test/code/**/*.coffee': ['coffee']
+    }
   });
 };

@@ -1,6 +1,6 @@
 'use strict'
 
-IndexView = require('views/index')
+IndexView = require 'views/index'
 
 describe 'IndexView', ->
 
