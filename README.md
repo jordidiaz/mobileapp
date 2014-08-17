@@ -1,4 +1,4 @@
-# mobileapp boilerplate 0.0.1
+# mobileapp boilerplate 0.1.0
 
 This is a mobile hybrid app project template based in [BTC Chaplin](http://jupl.github.io/btc/chaplin/) 0.12.0
 
