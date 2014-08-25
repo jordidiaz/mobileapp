@@ -12,7 +12,8 @@
     "jquery": "2.1.x",
     "lodash": "2.4.x",
     "fastclick": "1.0.x",
-    "rivets": "0.6.x"
+    "rivets": "0.6.x",
+    "react": "0.11.x"
   },
   "overrides": {
     "backbone": {
